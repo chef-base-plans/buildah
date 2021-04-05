@@ -55,5 +55,5 @@ do_build() {
 }
 
 do_install() {
-    cp "${HAB_CACHED_SRC_PATH}/${pkg_dirname}/buildah" "${pkg_prefix}/bin"
+    cp "${HAB_CACHED_SRC_PATH}/${pkg_dirname}/bin/buildah" "${pkg_prefix}/bin"
 }
