@@ -1,6 +1,6 @@
 pkg_name=buildah
 pkg_origin=core
-pkg_version="1.14.8"
+pkg_version="1.19.8"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=("Apache-2.0")
 pkg_deps=(
@@ -55,5 +55,5 @@ do_build() {
 }
 
 do_install() {
-    cp "${HAB_CACHED_SRC_PATH}/${pkg_dirname}/buildah" "${pkg_prefix}/bin"
+    cp "${HAB_CACHED_SRC_PATH}/${pkg_dirname}/bin/buildah" "${pkg_prefix}/bin"
 }
